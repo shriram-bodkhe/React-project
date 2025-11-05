@@ -1,0 +1,67 @@
+/* General Navbar Styling */
+.navbar {
+  background-color: #ffffff;
+  border-bottom: 1px solid #e5e5e5;
+  font-family: "Poppins", sans-serif;
+  transition: all 0.3s ease-in-out;
+}
+
+.navbar .navbar-brand img {
+  width: 130px;
+  transition: transform 0.3s ease;
+}
+
+.navbar .navbar-brand img:hover {
+  transform: scale(1.05);
+}
+
+.navbar-nav .nav-item {
+  margin: 0 10px;
+}
+
+.navbar-nav .nav-link {
+  color: #333;
+  font-weight: 500;
+  font-size: 16px;
+  text-transform: capitalize;
+  transition: color 0.3s ease;
+}
+
+.navbar-nav .nav-link:hover {
+  color: #0d6efd; /* Bootstrap blue */
+}
+
+.navbar-toggler {
+  border: none;
+}
+
+.navbar-toggler:focus {
+  outline: none;
+  box-shadow: none;
+}
+
+/* Responsive Design */
+@media (max-width: 992px) {
+  .navbar-nav {
+    text-align: center;
+    padding-top: 10px;
+  }
+
+  .navbar-nav .nav-item {
+    margin: 10px 0;
+  }
+
+  .navbar .navbar-brand img {
+    width: 100px;
+  }
+}
+
+@media (max-width: 576px) {
+  .navbar .navbar-brand img {
+    width: 90px;
+  }
+
+  .navbar-nav .nav-link {
+    font-size: 15px;
+  }
+}

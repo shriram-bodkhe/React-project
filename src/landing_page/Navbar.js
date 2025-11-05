@@ -1,66 +1,75 @@
-import React from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
-
+import "./Navbar.css"; // ✅ Import your CSS file
 
 function Navbar() {
-    return (
-        <nav
-            class="navbar navbar-expand-lg border-bottom"
-            style={{ backgroundColor: "#FFF" }}
+  const [isOpen, setIsOpen] = useState(false);
+
+  // Toggle function for hamburger button
+  const handleToggle = () => {
+    setIsOpen(!isOpen);
+  };
+
+  // Close menu when a link is clicked (useful for mobile)
+  const closeMenu = () => {
+    setIsOpen(false);
+  };
+
+  return (
+    <nav className="navbar navbar-expand-lg border-bottom">
+      <div className="container p-2">
+        <Link className="navbar-brand" to="/" onClick={closeMenu}>
+          <img src="media/logo.svg" alt="Logo" />
+        </Link>
+
+        {/* Hamburger button */}
+        <button
+          className={`navbar-toggler ${isOpen ? "" : "collapsed"}`}
+          type="button"
+          onClick={handleToggle}
+          aria-controls="navbarSupportedContent"
+          aria-expanded={isOpen}
+          aria-label="Toggle navigation"
         >
-            <div class="container p-2">
-                <Link class="navbar-brand" to="/">
-                    <img
-                        src="media/logo.svg"
-                        style={{ width: "25%" }}
-                        alt="Logo"
-                    />
-                </Link>
-                <button
-                    class="navbar-toggler"
-                    type="button"
-                    data-bs-toggle="collapse"
-                    data-bs-target="#navbarSupportedContent"
-                    aria-controls="navbarSupportedContent"
-                    aria-expanded="false"
-                    aria-label="Toggle navigation"
-                >
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <form class="d-flex" role="search">
-                        <ul class="navbar-nav mb-lg-0">
-                            <li class="nav-item">
-                                <Link class="nav-link active" aria-current="page" to="/signup">
-                                    Signup
-                                </Link>
-                            </li>
-                            <li class="nav-item">
-                                <Link class="nav-link active" to="about">
-                                    About
-                                </Link>
-                            </li>
-                            <li class="nav-item">
-                                <Link class="nav-link active" to="product">
-                                    Product
-                                </Link>
-                            </li>
-                            <li class="nav-item">
-                                <Link class="nav-link active" to="/pricing">
-                                    Pricing
-                                </Link>
-                            </li>
-                            <li class="nav-item">
-                                <Link class="nav-link active" to="/support">
-                                    Support
-                                </Link>
-                            </li>
-                        </ul>
-                    </form>
-                </div>
-            </div>
-        </nav>
-    );
+          <span className="navbar-toggler-icon"></span>
+        </button>
+
+        {/* Collapsible section */}
+        <div
+          className={`collapse navbar-collapse ${isOpen ? "show" : ""}`}
+          id="navbarSupportedContent"
+        >
+          <ul className="navbar-nav ms-auto mb-lg-0 text-center">
+            <li className="nav-item">
+              <Link className="nav-link active" to="/signup" onClick={closeMenu}>
+                Signup
+              </Link>
+            </li>
+            <li className="nav-item">
+              <Link className="nav-link active" to="/about" onClick={closeMenu}>
+                About
+              </Link>
+            </li>
+            <li className="nav-item">
+              <Link className="nav-link active" to="/product" onClick={closeMenu}>
+                Product
+              </Link>
+            </li>
+            <li className="nav-item">
+              <Link className="nav-link active" to="/pricing" onClick={closeMenu}>
+                Pricing
+              </Link>
+            </li>
+            <li className="nav-item">
+              <Link className="nav-link active" to="/support" onClick={closeMenu}>
+                Support
+              </Link>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  );
 }
 
 export default Navbar;

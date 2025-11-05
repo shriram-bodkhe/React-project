@@ -1,6 +1,5 @@
 /* eslint-disable jsx-a11y/alt-text */
 
-import React from "react";
 
 function Awards() {
     return (
@@ -16,8 +15,8 @@ function Awards() {
                         order volumes in India daily by trading and investing in:
                     </p>
                     <div className="row">
-                        <div className="col-6">
-                            <ul>
+                        <div className="col-6" >
+                            <ul style={{"list-style-type": "none"}}>
                                 <li>
                                     <p>Futures and Options</p>
                                 </li>
@@ -30,7 +29,7 @@ function Awards() {
                             </ul>
                         </div>
                         <div className="col-6">
-                            <ul>
+                            <ul style={{"list-style-type": "none"}}>
                                 <li>
                                     <p>Stocks & IPOs</p>
                                 </li>

@@ -1,0 +1,215 @@
+/* =======================
+   🌐 Global Styles
+======================= */
+body {
+  margin: 0;
+  font-family: "Poppins", Arial, sans-serif;
+  background-color: #f8f9fa;
+  color: #212529;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 600;
+  color: #0d47a1;
+}
+
+p {
+  color: #555;
+  line-height: 1.8;
+}
+
+a {
+  color: #0288d1;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* =======================
+   🏠 Hero Section
+======================= */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.hero-container {
+  text-align: center;
+  padding: 50px 20px;
+  background-color: #e3f2fd;
+  border-radius: 10px;
+}
+
+.hero-container h1 {
+  font-size: 2.5rem;
+  margin-top: 20px;
+}
+
+.hero-container p {
+  font-size: 1.1rem;
+  color: #444;
+}
+
+.hero-container button {
+  background-color: #42a5f5;
+  border: none;
+  color: #fff;
+  font-size: 1.1rem;
+  padding: 10px 30px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.hero-container button:hover {
+  background-color: #1e88e5;
+}
+
+/* =======================
+   🏆 Awards Section
+======================= */
+.awards-section h1 {
+  font-size: 2rem;
+  color: #0d47a1;
+}
+
+.awards-section p {
+  color: #555;
+  line-height: 1.8;
+}
+
+/* =======================
+   📊 Stats Section
+======================= */
+.stats-section h1 {
+  color: #0d47a1;
+  margin-bottom: 30px;
+}
+
+.stats-section p {
+  color: #666;
+  font-size: 1rem;
+}
+
+/* =======================
+   💰 Pricing Section
+======================= */
+.pricing-card {
+  text-align: center;
+  padding: 20px;
+  border: 1px solid #90caf9;
+  border-radius: 10px;
+  transition: all 0.3s ease;
+  background-color: #fff;
+}
+
+.pricing-card:hover {
+  box-shadow: 0 4px 12px rgba(33, 150, 243, 0.2);
+}
+
+.pricing-card h1 {
+  color: #0288d1;
+}
+
+/* =======================
+   🎓 Education Section
+======================= */
+.education-section h1 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.education-section a {
+  font-weight: 500;
+}
+
+/* =======================
+   👥 Team Section
+======================= */
+.team-section img {
+  border-radius: 50%;
+  width: 60%;
+  margin-bottom: 20px;
+  transition: 0.3s;
+}
+
+.team-section img:hover {
+  transform: scale(1.05);
+}
+
+.team-section h4 {
+  margin-top: 10px;
+  color: #0d47a1;
+}
+
+.team-section h6 {
+  color: #555;
+}
+
+/* =======================
+   📱 Responsive Design
+======================= */
+
+/* Medium screens (tablets) */
+@media (max-width: 992px) {
+  .col-6, .col-4 {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 30px;
+  }
+
+  .container {
+    padding: 0 20px;
+  }
+
+  .hero-container h1 {
+    font-size: 2rem;
+  }
+
+  .pricing-card {
+    margin-bottom: 20px;
+  }
+
+  .team-section img {
+    width: 50%;
+  }
+}
+
+/* Small screens (phones) */
+@media (max-width: 576px) {
+  .hero-container {
+    padding: 40px 10px;
+  }
+
+  .hero-container h1 {
+    font-size: 1.8rem;
+  }
+
+  .hero-container p {
+    font-size: 1rem;
+  }
+
+  .hero-container button {
+    width: 80%;
+    font-size: 1rem;
+  }
+
+  .team-section img {
+    width: 70%;
+  }
+
+  h1, h2 {
+    font-size: 1.5rem;
+  }
+
+  p {
+    font-size: 0.95rem;
+  }
+}

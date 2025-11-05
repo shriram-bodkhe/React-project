@@ -1,0 +1,334 @@
+/* ============================================================
+🌐 GLOBAL STYLES — Zerodha Clone
+============================================================ */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Inter", Arial, sans-serif;
+  background-color: #ffffff;
+  color: #333;
+  line-height: 1.6;
+}
+a {
+  color: #007bff;
+  text-decoration: none;
+  transition: 0.3s;
+}
+a:hover {
+  text-decoration: underline;
+}
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* ============================================================
+🧭 NAVBAR
+============================================================ */
+.navbar {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background-color: #fff;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+}
+.navbar-brand img {
+  width: 120px;
+}
+.navbar-nav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+.navbar-nav .nav-link {
+  color: #000;
+  font-weight: 500;
+}
+.navbar-nav .nav-link:hover {
+  color: #007bff;
+}
+
+/* ============================================================
+💰 HERO SECTION
+============================================================ */
+.hero {
+  text-align: center;
+  padding: 80px 20px;
+}
+.hero h1 {
+  font-size: 2.5rem;
+  font-weight: 600;
+  color: #222;
+}
+.hero p {
+  color: #6c757d;
+  margin: 15px 0;
+}
+.hero img {
+  width: 100%;
+  max-width: 550px;
+  margin-top: 30px;
+}
+
+/* ============================================================
+🧮 BROKERAGE SECTION
+============================================================ */
+.brokerage {
+  padding: 80px 20px;
+  text-align: center;
+}
+.brokerage h3 {
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+.brokerage ul {
+  list-style: none;
+  padding: 0;
+}
+.brokerage li {
+  margin: 8px 0;
+  font-size: 15px;
+}
+.brokerage li::before {
+  content: "• ";
+  color: #007bff;
+}
+
+/* ============================================================
+💵 PRICING
+============================================================ */
+.pricing {
+  text-align: center;
+  padding: 70px 20px;
+}
+.pricing h2 {
+  font-weight: 600;
+}
+.pricing table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 25px;
+}
+.pricing th,
+.pricing td {
+  border: 1px solid #ddd;
+  padding: 12px;
+}
+.pricing th {
+  background-color: #f8f9fa;
+  font-weight: 600;
+}
+
+/* ============================================================
+🧠 TECHNOLOGY SECTION
+============================================================ */
+.technology {
+  text-align: center;
+  padding: 80px 20px;
+}
+.technology img {
+  width: 100%;
+  max-width: 550px;
+}
+.technology p {
+  color: #6c757d;
+  margin-top: 10px;
+}
+
+/* ============================================================
+💬 SUPPORT PAGE
+============================================================ */
+.support {
+  background-color: #f8f9fa;
+  text-align: center;
+  padding: 70px 20px;
+}
+.support h1 {
+  font-weight: 600;
+}
+.support input {
+  width: 80%;
+  max-width: 400px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  margin-top: 10px;
+}
+.support a {
+  display: inline-block;
+  margin: 10px;
+  font-size: 14px;
+  color: #007bff;
+}
+.support a:hover {
+  text-decoration: underline;
+}
+
+/* ============================================================
+🧾 SIGNUP PAGE
+============================================================ */
+.signup-container {
+  width: 40%;
+  margin: 80px auto;
+  padding: 30px;
+  background-color: #f8f9fa;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+.signup-container h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+.signup-container form {
+  display: flex;
+  flex-direction: column;
+}
+.signup-container input {
+  margin-bottom: 15px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+.signup-container button {
+  padding: 10px;
+  background-color: #007bff;
+  border: none;
+  color: white;
+  border-radius: 6px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.signup-container button:hover {
+  background-color: #0056b3;
+}
+.signup-container p {
+  text-align: center;
+  margin-top: 10px;
+}
+
+/* ============================================================
+🪟 CREATE TICKET PAGE
+============================================================ */
+.ticket-container {
+  padding: 80px 20px;
+  text-align: center;
+}
+.ticket-container input {
+  width: 80%;
+  max-width: 400px;
+  margin: 10px auto;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+.ticket-container h3 {
+  font-weight: 600;
+}
+.ticket-container a {
+  color: #007bff;
+  display: inline-block;
+  margin: 10px;
+}
+.ticket-container a:hover {
+  text-decoration: underline;
+}
+
+/* ============================================================
+🌌 UNIVERSE SECTION
+============================================================ */
+.universe {
+  text-align: center;
+  padding: 70px 20px;
+}
+.universe img {
+  width: 100%;
+  max-width: 120px;
+  margin: 10px;
+}
+.universe p {
+  color: #6c757d;
+  font-size: 14px;
+}
+
+/* ============================================================
+📩 FOOTER
+============================================================ */
+footer {
+  background-color: #fafafa;
+  padding: 50px 20px;
+  text-align: center;
+}
+footer h5 {
+  font-weight: 600;
+}
+footer a {
+  display: block;
+  color: #333;
+  font-size: 14px;
+  margin-bottom: 5px;
+}
+footer a:hover {
+  color: #007bff;
+}
+footer p {
+  font-size: 13px;
+  color: #6c757d;
+  margin-top: 20px;
+  line-height: 1.6;
+}
+
+/* ============================================================
+🧍 BUTTONS & UTILITIES
+============================================================ */
+.btn-primary {
+  background-color: #007bff;
+  border: none;
+  border-radius: 6px;
+  color: #fff;
+  padding: 10px 20px;
+  font-size: 15px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.btn-primary:hover {
+  background-color: #0056b3;
+}
+
+/* ============================================================
+📱 RESPONSIVE DESIGN
+============================================================ */
+@media (max-width: 768px) {
+  .navbar-brand img {
+    width: 90px;
+  }
+  .navbar-nav {
+    flex-direction: column;
+    gap: 10px;
+  }
+  .hero h1 {
+    font-size: 2rem;
+  }
+  .signup-container {
+    width: 90%;
+  }
+  .ticket-container input,
+  .support input {
+    width: 95%;
+  }
+  .brokerage,
+  .pricing,
+  .technology,
+  .support,
+  .universe {
+    padding: 40px 10px;
+  }
+  footer {
+    padding: 30px 10px;
+  }
+}
